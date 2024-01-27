@@ -17,9 +17,9 @@ public class MappingClassController {
         return "getUser = " + userId;
     }
 
-    @PostMapping("/{userId}")
-    public String addUser(@PathVariable String userId) {
-        return "addUser = " + userId;
+    @PostMapping()
+    public String addUser() {
+        return "addUser";
     }
 
     @PatchMapping("/{userId}")
