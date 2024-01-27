@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+//@Sl4j 사용시 Logger log = LoggerFactory.getLogger() 없이도 로그기능 사용가능 (lombok)
 public class LogTestController {
 
     private Logger log = LoggerFactory.getLogger(LogTestController.class);
